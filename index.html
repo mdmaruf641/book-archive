@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lovely Books</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- search part start -->
+    <header class="w-50 mx-auto my-4">
+      <h1 class="text-center text-info mb-3">Search Your Lovely Books</h1>
+      <div class="input-group mb-3">
+        <input id="search-box" type="text" class="form-control" placeholder="Enter your Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+      </div>
+    </header>
+    <!-- search part end -->
+
+    <!-- search result start  -->
+    <main>
+      <section class="container">
+
+        <!-- how many result you found -->
+         <h4 class="text-center" id="found-result"></h4>
+        <hr>
+        <!-- founded items -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4"></div>
+      </section>
+    </main>
+    <!-- search result end  -->
+
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
